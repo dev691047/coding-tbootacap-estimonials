@@ -1,0 +1,176 @@
+.c{
+   position: absolute; 
+   margin:200px 0 0  300px;
+   
+} 
+.b{ 
+  position:absolute;
+   margin:580px 0 0 0;
+}
+    
+.a{
+  position:absolute;
+    margin-top:40px;
+    margin-left: 700px;
+}
+
+@media(max-width:700px)
+{
+  .a{
+    margin:30px 250px 0 90px;
+    /* width:100%; */
+    height:300px;
+  }
+  
+}
+
+
+
+
+
+ .main-container{
+    position:absolute;
+    z-index:-1;
+}
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap'); */
+
+
+
+
+
+
+ * {box-sizing: border-box}
+
+
+body {
+  font-family:"Inter";
+}
+
+
+.mySlides{
+
+height:500px;
+width:1100px;
+position:absolute;
+margin:150px 100px 0 -140px;
+
+
+}
+
+.mySlides img {
+    
+    vertical-align: middle; 
+     margin-left: 655px;
+     width:40%;
+     box-shadow: 10px 10px 20px black;
+     border-radius: 5px;
+    
+
+}
+@media(max-width:700px){
+ .mySlides img{
+  
+  width:22%;
+  margin: -90px 0 0 270px;
+ }
+
+}
+
+.text{
+  font-size:32px;
+  font-weight: 300;
+  height:200px;
+  width:640px;
+  color:hsl(240, 3%, 63%);
+ text-align: left;
+ margin:-325px 0 420px 70px;
+
+}
+@media(max-width:700px){
+  .text{
+    margin:80px 0 0 230px;
+    height:220px;
+    width:300px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+
+}
+.text p{
+  font-size:20px;
+  font-weight: 500;
+  color:hsl(240, 18%, 77%);
+}
+p span{
+  color:hsl(240, 38%, 20%);
+  font-weight: 700px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot-class{
+  position: absolute;
+  margin:570px 0 0 870px;
+}
+@media(max-width:700px){
+  .dot-class{
+    margin:280px 0 0 210px;;
+  }
+}
+.dot1 {
+  cursor: pointer;
+  height: 35px;
+  width: 40px;
+  margin: 0 -5px 0 0 ;
+  padding: 0;
+  background-color: white;
+  border-radius:15px 0 0 15px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot2 {
+  cursor: pointer;
+  height: 35px;
+  width: 40px;
+  margin: 0 ;
+  background-color:white;
+  border-radius:0 15px 15px 0;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot-class img{
+  margin:9px 0 -5px 0 ;
+
+}
+
+.active, .dot1:hover ,.dot2:hover{
+  background-color: #d8d5d5;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
